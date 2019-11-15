@@ -1,0 +1,26 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.rootPane{
+    /*-fx-background-image: url(."backgroung.jpg");*/
+	-fx-background-color: linear-gradient(#2A5058, #ffa2b1);
+    
+   } 
+    
+.pane1 { -fx-background-image: url('login/imagen1.jpg');
+	-fx-background-size : 100%;
+	-fx-background-repeat: no-repeat ;
+    	}
+    
+.pane2 {-fx-background-image: url('login/luna.png');
+	    -fx-background-size : 100%;
+	-fx-background-repeat: no-repeat ;
+
+}
+.pane3{-fx-background-image: url('login/imagen2.png');
+	   -fx-background-size : 100%;
+	-fx-background-repeat: no-repeat ;
+	}
+	
+.pane4{-fx-background-image: url('login/imagen3.png');
+       -fx-background-size : 100%;
+	   -fx-background-repeat: no-repeat ;
+}
