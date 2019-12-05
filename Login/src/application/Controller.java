@@ -1,8 +1,13 @@
 package application;
 
+
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class Controller {
@@ -26,9 +31,40 @@ public class Controller {
 //	@FXML
 //	private ResourceBundle resources;
 	
-
+	
+//*****   Cambio de pantalla  ****
+	@FXML
+	private AnchorPane mypane;
+	
+	@FXML
+	private void openStage() {
+		
+		
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("Home.fxml"));
+			mypane = (AnchorPane)loader.load();
+			Scene scene = new Scene(mypane);
+			Stage stage = new Stage();
+			stage.setScene(scene);
+			stage.show();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	///**********************
+	
+	
+	
+	
+	
 	public void initialize() {
-
+		
+//		pane1.setStyle("-fx-background-image: url(imagen1.jpg)");
+//		pane2.setStyle("-fx-background-image: url(imagen2.jpg)");
+//		pane3.setStyle("-fx-background-image: url(imagen3.jpg)");
+//		pane4.setStyle("-fx-background-image: url(imagen4.jpg)");
 		
 
 		backgroundAnimation();
